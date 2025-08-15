@@ -1,7 +1,7 @@
-# TagLens: Cloud-Based Event Management System
+# Eventure: Cloud-Based Event Management System
 
 ## Overview
-TagLens is a web application for planning and managing events such as conferences, weddings, and workshops. It provides organizers with tools to create event pages, sell tickets, and track RSVPs. The system leverages AWS serverless architecture for scalability and reliability.
+Eventure is a web application for planning and managing events such as conferences, weddings, and workshops. It provides organizers with tools to create event pages, sell tickets, and track RSVPs. The system leverages AWS serverless architecture for scalability and reliability.
 
 ## Features
 - Organizers can create event pages, sell tickets, and track RSVPs
@@ -14,17 +14,17 @@ TagLens is a web application for planning and managing events such as conference
 
 ## AWS Architecture
 
-TagLens is built on a modern, serverless AWS architecture designed to make event management seamless, secure, and scalable for everyone. Here’s how the pieces fit together:
+Eventure is built on a modern, serverless AWS architecture designed to make event management seamless, secure, and scalable for everyone. Here’s how the pieces fit together:
 
 **Amazon S3** is the digital gallery for your events. It safely stores all your event images, brochures, and even hosts the PHP frontend, making sure your content is always available and easy to update.
 
 **Amazon CloudFront** acts as the global delivery service, ensuring that your event pages, images, and documents load quickly for users anywhere in the world. No matter where your attendees are, they get a fast, smooth experience.
 
-**Amazon API Gateway** is the front door to TagLens’s backend. It exposes secure REST endpoints, allowing organizers and attendees to interact with the system—whether creating events, buying tickets, or checking RSVPs.
+**Amazon API Gateway** is the front door to Eventure’s backend. It exposes secure REST endpoints, allowing organizers and attendees to interact with the system—whether creating events, buying tickets, or checking RSVPs.
 
-**AWS Lambda** is the brain behind the scenes. Whenever someone interacts with TagLens (like registering for an event or making a payment), Lambda functions spring into action to process requests, update records, and trigger notifications—all without the need for traditional servers.
+**AWS Lambda** is the brain behind the scenes. Whenever someone interacts with Eventure (like registering for an event or making a payment), Lambda functions spring into action to process requests, update records, and trigger notifications—all without the need for traditional servers.
 
-**Amazon DynamoDB** is the memory of TagLens. It’s a fast, reliable NoSQL database that stores all your event details, user registrations, ticket sales, and RSVP data. DynamoDB scales automatically, so whether you’re hosting a small workshop or a massive conference, your data is safe and accessible.
+**Amazon DynamoDB** is the memory of Eventure. It’s a fast, reliable NoSQL database that stores all your event details, user registrations, ticket sales, and RSVP data. DynamoDB scales automatically, so whether you’re hosting a small workshop or a massive conference, your data is safe and accessible.
 
 **Amazon Cognito** keeps everyone’s accounts secure. Organizers and attendees can sign up, log in, and manage their profiles with confidence, knowing their information is protected by robust authentication.
 
@@ -34,7 +34,7 @@ TagLens is built on a modern, serverless AWS architecture designed to make event
 
 **Amazon SNS** (Simple Notification Service) is the reminder system, sending timely notifications to attendees before events start, so nobody misses out.
 
-**Amazon CloudWatch** is the eyes and ears of TagLens, monitoring activity, logging events, and helping troubleshoot any issues to keep everything running smoothly.
+**Amazon CloudWatch** is the eyes and ears of Eventure, monitoring activity, logging events, and helping troubleshoot any issues to keep everything running smoothly.
 
 Together, these AWS services create a robust, flexible, and human-friendly platform that lets you focus on creating memorable events while the technology takes care of the rest.
 
